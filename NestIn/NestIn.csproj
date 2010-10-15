@@ -130,7 +130,7 @@
     <Compile Include="RootSelector.Designer.cs">
       <DependentUpon>RootSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="SolutionExplorer.cs" />
+    <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">

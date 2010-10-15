@@ -66,9 +66,13 @@ namespace NestIn
             if ( null != mcs )
             {
                 // Create the command for the menu item.
-                CommandID menuCommandID = new CommandID(GuidList.guidNestInCmdSet, (int)PkgCmdIDList.cmdidMyCommand);
-                MenuCommand menuItem = new MenuCommand(MenuItemCallback, menuCommandID );
-                mcs.AddCommand( menuItem );
+                CommandID nestInCommandId = new CommandID(GuidList.guidNestInCmdSet, (int)PkgCmdIDList.cmdidMyCommand);
+                MenuCommand nestIn = new MenuCommand(NestInCallback, nestInCommandId );
+                mcs.AddCommand( nestIn );
+
+				CommandID unNestCommandId = new CommandID(GuidList.guidNestInCmdSet, (int)PkgCmdIDList.cmdidMyCommand2);
+				MenuCommand unNestIn = new MenuCommand(UnNestCallback, unNestCommandId);
+				mcs.AddCommand(unNestIn);
             }
         }
         #endregion
@@ -85,13 +89,27 @@ namespace NestIn
         /// See the Initialize method to see how the menu item is associated to this function using
         /// the OleMenuCommandService service and the MenuCommand class.
         /// </summary>
-        private void MenuItemCallback(object sender, EventArgs e)
+        private void NestInCallback(object sender, EventArgs e)
         {
 			var rootSelector = new RootSelector();
         	var envDte = GetService<DTE>();
-        	new SolutionExplorer(envDte, rootSelector).Nest();
+        	new Worker(envDte, rootSelector).Nest();
 			rootSelector.Dispose();
         }
+
+
+		/// <summary>
+		/// This function is the callback used to execute a command when the a menu item is clicked.
+		/// See the Initialize method to see how the menu item is associated to this function using
+		/// the OleMenuCommandService service and the MenuCommand class.
+		/// </summary>
+		private void UnNestCallback(object sender, EventArgs e)
+		{
+			var rootSelector = new RootSelector();
+			var envDte = GetService<DTE>();
+			new Worker(envDte, rootSelector).UnNest();
+			rootSelector.Dispose();
+		}
 
     }
 }
