@@ -87,24 +87,10 @@ namespace NestIn
         /// </summary>
         private void MenuItemCallback(object sender, EventArgs e)
         {
-            // Show a Message Box to prove we were here
-            IVsUIShell uiShell = (IVsUIShell)GetService(typeof(SVsUIShell));
-            Guid clsid = Guid.Empty;
-            int result;
-
-			new SolutionExplorer(GetService<DTE>()).Nest();
-			//Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(uiShell.ShowMessageBox(
-			//           0,
-			//           ref clsid,
-			//           "NestIn",
-			//           string.Join(Environment.NewLine, new SolutionExplorer(GetService<DTE>()).GetSelectedItems().Select(fi => fi.Name)),
-			//           string.Empty,
-			//           0,
-			//           OLEMSGBUTTON.OLEMSGBUTTON_OK,
-			//           OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST,
-			//           OLEMSGICON.OLEMSGICON_INFO,
-			//           0,        // false
-			//           out result));
+			var rootSelector = new RootSelector();
+        	var envDte = GetService<DTE>();
+        	new SolutionExplorer(envDte, rootSelector).Nest();
+			rootSelector.Dispose();
         }
 
     }
