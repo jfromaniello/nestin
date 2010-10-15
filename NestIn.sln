@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestIn", "NestIn\NestIn.csproj", "{9F7D370D-31C0-452F-BF38-10F628C56752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestIn_UnitTests", "NestIn\NestIn_UnitTests\NestIn_UnitTests.csproj", "{4FCC5961-1E28-4390-A97C-97E432B1BA4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ACAB8D8-B6A6-4A19-8B03-91F7C5AE5B50}"
+	ProjectSection(SolutionItems) = preProject
+		NestIn.vsmdi = NestIn.vsmdi
+		UnitTests.testsettings = UnitTests.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = NestIn.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F7D370D-31C0-452F-BF38-10F628C56752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7D370D-31C0-452F-BF38-10F628C56752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7D370D-31C0-452F-BF38-10F628C56752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7D370D-31C0-452F-BF38-10F628C56752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCC5961-1E28-4390-A97C-97E432B1BA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCC5961-1E28-4390-A97C-97E432B1BA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCC5961-1E28-4390-A97C-97E432B1BA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCC5961-1E28-4390-A97C-97E432B1BA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
