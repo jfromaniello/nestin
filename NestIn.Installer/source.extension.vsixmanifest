@@ -2,10 +2,13 @@
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
   <Identifier Id="NestIn.Installer.Microsoft.ffe50bfc-70d5-4dd8-a242-26aa21025ae6">
 	<Name>NestIn</Name>
-	<Author>Microsoft</Author>
-	<Version>1.0</Version>
-	<Description xml:space="preserve">Empty VSIX Project.</Description>
+	<Author>José F. Romaniello</Author>
+	<Version>1.0.0.0</Version>
+	<Description xml:space="preserve">Nest files in Solution Explorer.</Description>
 	<Locale>1033</Locale>
+	<MoreInfoUrl>http://nestin.codeplex.com/</MoreInfoUrl>
+	<License>lgpl.txt</License>
+	<GettingStartedGuide>http://nestin.codeplex.com/</GettingStartedGuide>
 	<SupportedProducts>
 	  <VisualStudio Version="10.0">
 		<Edition>Ultimate</Edition>
