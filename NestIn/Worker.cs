@@ -72,13 +72,18 @@ namespace NestIn
 				UnNest(parent, grandChild);
 			}
 
+			var contentType = childItem.Properties.Item("ItemType").Value;
+
 			var filePath = childItem.FileNames[0];
 			var tempFile = Path.GetTempFileName();
 			File.Copy(filePath, tempFile, true); 
+			
 			childItem.Delete();
+			
 			File.Copy(tempFile, filePath); 
 			File.Delete(tempFile);
-			parent.ProjectItems.AddFromFile(filePath);
+			var newItem = parent.ProjectItems.AddFromFile(filePath);
+			newItem.Properties.Item("ItemType").Value = contentType;
 		}
 	}
 }
