@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestIn", "NestIn\NestIn.csproj", "{9F7D370D-31C0-452F-BF38-10F628C56752}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestIn.Tests", "NestIn.Tests\NestIn.Tests.csproj", "{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}"
@@ -20,14 +20,14 @@ Global
 		{9F7D370D-31C0-452F-BF38-10F628C56752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F7D370D-31C0-452F-BF38-10F628C56752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F7D370D-31C0-452F-BF38-10F628C56752}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D343D322-FBC2-4B5F-A656-399FC8814509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D343D322-FBC2-4B5F-A656-399FC8814509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D343D322-FBC2-4B5F-A656-399FC8814509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D343D322-FBC2-4B5F-A656-399FC8814509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47DFF2E-4C47-4DCE-9E8B-286A0A185F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
