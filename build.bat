@@ -1,3 +1,3 @@
 @echo off
-call "%VS110COMNTOOLS%..\..\VC\vcvarsall.bat"
-msbuild %~dp0default.build /t:All /nologo
+call "%VS120COMNTOOLS%..\..\VC\vcvarsall.bat"
+msbuild default.build /t:All /nologo

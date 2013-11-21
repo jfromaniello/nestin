@@ -4,3 +4,5 @@ bin/*
 Bin/*
 obj
 Obj
+*.suo
+output/*

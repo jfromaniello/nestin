@@ -4,7 +4,7 @@
 
 	<PropertyGroup>
 		<SolutionFile>NestIn.sln</SolutionFile>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<AssemblyVersion>1.1</AssemblyVersion>
 	</PropertyGroup>
 	
 	<ItemGroup>
@@ -15,7 +15,7 @@
 		<BuildResult Include="NestIn.Installer\bin\$(Configuration)\*.*" />
 	</ItemGroup>		
 	
-	<Target Name="UpdateVsixVersion" DependsOnTargets="HgRevision">
+	<Target Name="UpdateVsixVersion">
 		<Message Text="Updating VSIX version numbers to $(AssemblyVersion).$(RevisionNumber)..." />
 		<ItemGroup>
 			<Vsix Include="NestIn.Installer\source.extension.vsixmanifest" />
